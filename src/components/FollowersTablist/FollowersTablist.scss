@@ -1,0 +1,63 @@
+@import '../../styles/partials/variables.scss';
+
+.followers-list {
+  justify-content: space-between;
+  padding: 15px;
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-family: $secondary-font;
+    line-height: 21px;
+    margin-left: 20px;
+    text-align: left;
+    padding-left: 3em;
+    small {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+    }
+  }
+
+  &:last-child {
+    align-items: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    button {
+      width: 162.84px;
+      height: 42px;
+    }
+
+    button.following-hover:hover span {
+      display: none;
+    }
+
+    button.following-hover:hover:before {
+      content: 'Unfollow';
+      color: #ec5353;
+    }
+
+    button.following-hover:hover {
+      background: #773b3b8c;
+      border-color: #9e4040;
+    }
+
+    button.follow-text {
+      background: #219653;
+      color: white;
+    }
+  }
+  .follower-info {
+    align-items: center;
+    padding-left: 6em;
+  }
+}

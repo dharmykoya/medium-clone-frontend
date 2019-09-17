@@ -1,0 +1,32 @@
+.comment-edit-history {
+  height: 300px;
+  width: 50vw;
+  overflow: scroll;
+}
+.time-stamp {
+  background-color: rgba(0, 0, 0, 0.64);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: 0.5em;
+}
+.comment-body {
+  background: #161616;
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: inherit;
+  min-height: 2em;
+  margin-bottom: 7px;
+}
+.edit-functionality:hover {
+  cursor: pointer;
+}
+.modal-main {
+  top: 35% !important;
+}
+
+.comment-body-light {
+  background: white !important;
+  color: black !important;
+  .time-stamp {
+    background: rgba(0, 0, 0, 0.03) !important;
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render component should check if user is authenticated 1`] = `ReactWrapper {}`;
+
+exports[`Render component should logout user successfully 1`] = `ReactWrapper {}`;
+
+exports[`Render component should toggle navbar correctly 1`] = `ReactWrapper {}`;
+
+exports[`Render component should toggle to dark theme 1`] = `ReactWrapper {}`;
+
+exports[`Render component should toggle to dark theme 2`] = `ReactWrapper {}`;
+
+exports[`Render component should toggle to light theme 1`] = `ReactWrapper {}`;

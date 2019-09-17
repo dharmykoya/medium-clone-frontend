@@ -1,0 +1,143 @@
+@import '../../styles/partials/variables.scss';
+
+.editor {
+  min-height: 100vh;
+  box-shadow: 1px 2px 14px 1px rgba(34, 34, 34, 0.07);
+}
+
+.editor_action {
+  position: fixed;
+  width: 320px;
+  box-shadow: 1px 2px 14px 1px rgba(34, 34, 34, 0.07);
+}
+
+.ql-editor,
+.ql-container {
+  &.dark-theme {
+    background: #272727;
+    color: #ffffff;
+  }
+  &.light-theme {
+    background: #f6f7f9;
+    color: #272727;
+  }
+}
+
+.ql-toolbar {
+  background: #f6f7f9;
+  color: #272727;
+}
+
+.editor_title {
+  border-bottom: 2px solid #444 !important;
+  border-radius: 0;
+  &.dark-theme {
+    color: #ffffff;
+  }
+  &.light-theme {
+    color: #272727;
+  }
+}
+
+.tag_form {
+  display: flex;
+}
+
+.tag_form input {
+  width: 220px;
+  height: 35px;
+  border: 1px solid #219653 !important;
+  border-radius: 5px 0px 0px 5px !important;
+  padding: 3px 5px;
+}
+
+.add_tag_btn {
+  color: #ffffff;
+  background: #219653;
+  border: 1px solid #219653 !important;
+  border-radius: 0px 5px 5px 0px !important;
+  padding: 4px 17px;
+}
+
+.image-button {
+  background: none;
+  border: none;
+}
+
+.save {
+  padding: 3px 60px !important;
+  background: transparent;
+  color: #219653;
+  border: 1px solid #219653;
+}
+.publish {
+  padding: 3px 52px !important;
+}
+
+.tag {
+  color: #222;
+  background: #fff;
+  font-size: 10px;
+  border-radius: 20px;
+  max-width: 100%;
+  padding: 4px 5px;
+  margin: 5px 7px;
+  word-break: break-all;
+  border: 1px solid rgba(34, 34, 34, 0.4);
+  & span {
+    float: right;
+    position: relative;
+    right: 1px;
+    margin-left: 5px;
+  }
+}
+
+.react-autosuggest__suggestions-container--open {
+  background: #fff;
+  color: #222;
+  width: 100%;
+  position: relative;
+  top: 4px;
+  border-radius: 4px;
+  & li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  & ul {
+    margin-left: 3px;
+    padding: 0;
+  }
+}
+
+.react-autosuggest__suggestion:hover {
+  background: #219653;
+  color: #ffffff;
+}
+
+.w-70 {
+  width: 50%;
+  border: 1px solid #219653 !important;
+  border-radius: 5px !important;
+}
+
+.display-hidden {
+  display: none;
+}
+
+@media (max-width: 998px) {
+  .editor_action {
+    position: relative;
+    margin: 15px 0 !important;
+    width: 100%;
+    box-shadow: 1px 2px 14px 1px rgba(34, 34, 34, 0.07);
+  }
+  .react-autosuggest__container {
+    width: 90%;
+  }
+  .tag_form input {
+    width: 100%;
+  }
+  .save {
+    margin-right: 15px;
+  }
+}

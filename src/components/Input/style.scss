@@ -1,0 +1,29 @@
+.input {
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.form-input-light-theme {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.07);
+}
+
+.form-input-dark-theme {
+  border: 1px solid #eeeeee;
+  color: inherit;
+}
+
+.input-search {
+  border: 1px solid #219653 !important;
+  border-radius: 5px 0px 0px 5px !important;
+  width: 70%;
+  background-color: #ffffff;
+  height: 46px;
+  color: initial;
+}

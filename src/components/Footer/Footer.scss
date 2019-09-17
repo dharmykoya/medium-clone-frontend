@@ -1,0 +1,39 @@
+.footer {
+  background: #f6f7f9;
+  font-family: 'Roboto', sans-serif;
+  &.dark-theme {
+    background: #272727;
+    color: #ffffff;
+  }
+  &.light-theme {
+    background: #f6f7f9;
+    color: #272727;
+  }
+}
+
+.social_links {
+  h5 {
+    font-weight: 300;
+  }
+}
+
+.copyright {
+  p {
+    color: #919090;
+    font-size: 12px;
+  }
+}
+
+.address {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+@media (max-width: 576px) {
+  .pt-xs-5 {
+    padding-top: 20px;
+  }
+  .mx-xs-auto {
+    margin: o auto;
+  }
+}

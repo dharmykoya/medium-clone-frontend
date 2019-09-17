@@ -1,0 +1,23 @@
+.textarea {
+  box-sizing: border-box;
+  // max-width: 760px;
+  height: 147.5px;
+  resize: none;
+  padding-left: 10px;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.form-textarea-light-theme {
+  border: 1px solid rgba(0, 0, 0, 0.29);
+}
+
+.form-textarea-dark-theme {
+  border: 1px solid #eeeeee;
+  color: white;
+}

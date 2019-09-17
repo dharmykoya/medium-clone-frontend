@@ -1,0 +1,25 @@
+.button {
+  border-radius: 5px;
+  height: 35px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+}
+
+.button-normal {
+  background: #219653;
+  color: #ffffff;
+}
+
+.button-inverse {
+  background: none;
+  border: thin solid #219653;
+  color: #219653;
+}
+
+.button-search {
+  width: 30%;
+  position: relative;
+  height: 46px;
+  border-radius: 0px 5px 5px 0px !important;
+}

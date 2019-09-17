@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 'node'
+addons:
+  apt:
+    packages:
+      - libgconf-2-4
+install:
+  - npm install
+cache:
+  # cache both npm modules and Cypress binary
+  directories:
+    - ~/.npm
+    - ~/.cache
+  # install dependencies and check that Cypress can run
+  override:
+    - npm run cy:verify
+script:
+  - npm run test:coverage
+  - $(npm bin)/cypress run

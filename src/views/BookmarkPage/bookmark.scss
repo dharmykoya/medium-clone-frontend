@@ -1,0 +1,40 @@
+.profile-page-publication-container {
+  margin-top: 30px;
+  .modal-cover {
+    z-index: 1;
+  }
+  .modal-body {
+    font-size: 1.5em;
+  }
+  .publication-container {
+    margin-top: 20px;
+    .loader {
+      margin: 0px auto;
+    }
+    .tablist-container {
+      margin-bottom: 20px;
+    }
+  }
+  .no-article-confirm-container {
+    padding: 10px 0px;
+    .no-article-button {
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px;
+      &:hover {
+        color: inherit;
+        opacity: 0.5;
+      }
+    }
+    .no-article-confirm-yes {
+      margin-right: 5px;
+      min-width: 50px;
+    }
+    .no-article-confirm-no {
+      min-width: 50px;
+      background: inherit;
+      border: 1px solid #219653;
+      color: #219653;
+    }
+  }
+}

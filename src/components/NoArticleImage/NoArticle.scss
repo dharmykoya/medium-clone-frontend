@@ -1,0 +1,18 @@
+.no-article-container {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  h3 {
+    font-size: 36px;
+    margin: 25px 0;
+  }
+  .no-article-button {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    &:hover {
+      color: inherit;
+      opacity: 0.5;
+    }
+  }
+}

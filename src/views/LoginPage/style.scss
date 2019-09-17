@@ -1,0 +1,158 @@
+@import '../../styles/main.scss';
+h1 {
+  font-family: $primary-font;
+  color: white;
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 1em;
+}
+.main-section {
+  margin: 4em 0em 4em 0em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-panel {
+  width: 40%;
+  padding: 1.5em;
+  background: rgba(128, 128, 128, 0.05);
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    padding-top: 1em;
+    color: white;
+  }
+  p.no-account {
+    color: black;
+  }
+}
+.input-panel {
+  width: 50%;
+  height: auto;
+  padding: 2em 0 0 0;
+}
+.login-input {
+  display: block;
+  width: 34vw;
+  height: 2.2em;
+  margin-bottom: 1em;
+  color: white;
+}
+form > .login-light {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.07);
+  color: black;
+}
+.login-button {
+  width: 34vw;
+  height: 2.2em;
+  left: 757px;
+  top: 541px;
+  border: none;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #219653;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.login-button-twitter {
+  @extend .login-button;
+  background: #1da1f2 !important;
+  span {
+    color: white;
+    display: inline-block;
+  }
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.login-button-facebook {
+  @extend .login-button;
+  background: #3a559f !important;
+  span {
+    color: white;
+    display: inline-block;
+  }
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.sign-up-span > a {
+  color: green;
+  display: inline-block;
+  margin-left: 5px;
+}
+.login-button-google {
+  @extend .login-button;
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  color: black !important;
+  span {
+    display: inline-block;
+  }
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.horizontal-line {
+  display: flex;
+  p {
+    color: #c4c4c4;
+    position: relative;
+    top: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  width: 34vw;
+}
+.line {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #c4c4c4;
+}
+.social-auth {
+  margin-top: 0.7em;
+  height: 160px;
+  left: 758px;
+  top: 673px;
+}
+@media (max-width: 769px) {
+  .main-section {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-button {
+    width: 80vw !important;
+  }
+  .hero-panel {
+    display: none;
+  }
+  .input-panel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-input {
+    width: 80vw;
+  }
+  .container > h1 {
+    font-size: 1.2em !important;
+  }
+  .horizontal-line {
+    width: 80vw;
+  }
+  .line {
+    width: 100px !important;
+  }
+}
